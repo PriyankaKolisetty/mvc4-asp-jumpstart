@@ -13,7 +13,8 @@
 </head>
 <body>
     <div>
-        @using (@Html.BeginForm()) {
+        <p>@Html.ValidationSummary()</p>
+        @*@using (@Html.BeginForm()) {
             <p>Your name: @Html.TextBoxFor(x => x.Name)</p>
             <p>Your email: @Html.TextBoxFor(x => x.Email)</p>
             <p>Your phone: @Html.TextBoxFor(x => x.Phone)</p>
@@ -25,7 +26,17 @@
                     new SelectListItem(){Text="No thanks!", Value=bool.FalseString}}, "Choose an option")
             </p>
             <input  type="submit" value="Register me"/>
-        }
+        }*@
+        <form method="post" action="/Home/RegisterMe">
+            <input type="text" value="" name="Name" />
+            <input type="text" value="" name="Email" />
+            <input type="text" value="" name="Phone" />
+            <select name="WillAttend">
+                <option value="true">Yeah</option>
+                <option value="false">Cannot make it</option>
+            </select>
+            <input type="submit" value="Register me" />
+        </form>
     </div>
 </body>
 

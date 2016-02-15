@@ -1,4 +1,5 @@
-﻿using System;
+﻿using empty_demo.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -21,6 +22,15 @@ namespace empty_demo.Controllers
         public ActionResult RegisterMe() {
             return View();
         }
-
+        [HttpPost]
+        public ActionResult RegisterMe(GuestResponse gr) {
+            //this guest response can then be appended to the database
+            if (ModelState.IsValid ==true) {
+                return View("Thanks", gr);
+            }
+            else {
+                return View();
+            }
+        }
     }
 }
