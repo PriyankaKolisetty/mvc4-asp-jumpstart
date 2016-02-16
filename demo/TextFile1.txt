@@ -1,0 +1,35 @@
+﻿3 tier application looks like
+ database - ORM - Web services (JSON/ XML) - HTTP- Webapp(HTML5 CSS3 JS(Jquery , Angular JS, KO, Ember ..)) - Browser (IE,Firefox, Chrome)
+ - sophistication
+ - development is not easy
+ - rich internet application is easy
+
+
+ MVC ASP
+ database - ORM - Webapp(server + api) [Ajax - JSON/ XML]- HTTP - HTML - browser
+
+ - animations, 
+ - rich internet application
+ - feedack applications
+ - when you have cross device applications
+ - IoT refrigerator .. this is will not work
+
+ - faster development
+ - clearner development /  seamed
+ - Much less of JS
+
+
+ Ex : 
+ 1. Simple poll application : MVC
+ 2. RSVP application, and registering participants : MVC
+ 3. iLearn kind ofapplication, collecting training requirements, but not reporting them : MVC
+ 4. collecting skills of participants / attendance, maintaining attendance, showing the defaulters list :MVC
+
+
+ 5. Comprehensive reporting applications with graphs , reporting and animations : 3 tier application
+ 6. Facebook like social media applications with Network diagrams and connections analysis  : 3 tier application
+ 7. Share market application , like ShareKhan.com: 3 tier application, with Signal or duplex service
+
+
+ User -> Browser - > Request - over HTTP - Controller(Business logic) - Model - Database 
+ Database - Controller - ViewModel - View - Response - over HTTP  - Browser
