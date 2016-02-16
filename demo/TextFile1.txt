@@ -31,5 +31,5 @@
  7. Share market application , like ShareKhan.com: 3 tier application, with Signal or duplex service
 
 
- User -> Browser - > Request - over HTTP - Controller(Business logic) - Model - Database 
- Database - Controller - ViewModel - View - Response - over HTTP  - Browser
+ User -> Browser(Chrome) - > Request - over HTTP - [Route Config]- Controller(C#) - Domain Model(C#)- over MongoDriver 3.2 - Database (MongoDB)
+ Database(MongoDB) - Controller(C#) - ViewModel(C#) - View(Razor+HTML) - Response - over HTTP  - Browser(Chrome)

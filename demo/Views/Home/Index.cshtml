@@ -1,0 +1,23 @@
+﻿@model demo.Models.AppUser
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <p>Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
+        <p>@ViewBag.Greeting</p>
+        <p>@Model.alias</p>
+        <p>@Model.email</p>
+        <p>@Model.empno</p>
+    </div>
+</body>
+</html>
