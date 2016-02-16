@@ -1,0 +1,28 @@
+﻿@model List<demo.Models.Skill>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @{
+            <ul>
+               @foreach (var skill in Model) {
+                   <li>
+                       <a>
+                           @skill.title
+                       </a>
+                   </li>
+               }
+            </ul>
+        }
+    </div>
+</body>
+</html>
