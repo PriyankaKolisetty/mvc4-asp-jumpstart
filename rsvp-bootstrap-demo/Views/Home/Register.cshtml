@@ -1,0 +1,42 @@
+﻿@model rsvp_bootstrap_demo.Models.GuestResponse
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+</head>
+<body>
+    <div>
+        @*<form action="Register" method="post">
+                <label>Your Name</label>
+                <input type="text" value="" name="Name2" />
+                <label>Your Email</label>
+                <input type="text" value="" name="Email" />
+                <label>Your Contact</label>
+                <input type="text" value="" name="Contact" />
+                <select name="IsAvailable">
+                    <option value="true">Yeah Im in</option>
+                    <option value="false">Oops! have to miss this out</option>
+                </select>
+                <br />
+                <input type="submit" value="Submit" />
+            </form>*@
+        @using (Html.BeginForm()) {
+            <p>Your name: @Html.TextBoxFor(x => x.Name)</p>
+            <p>Your name: @Html.TextBoxFor(x => x.Email)</p>
+            <p>Your name: @Html.TextBoxFor(x => x.Contact)</p>
+
+            @Html.DropDownListFor(x => x.IsAvailable, new SelectListItem[] {
+                new SelectListItem(){Text= "Yes! yeah! im in ", Value= bool.TrueString},
+                new SelectListItem(){Text="Oops I'm gonna miss this", Value= bool.FalseString} })
+            <input type="submit" value="Submit" />
+        }
+    </div>
+</body>
+
+</html>
