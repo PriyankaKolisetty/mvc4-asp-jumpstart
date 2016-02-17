@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo", "demo\demo.csproj", "{C7B4CFBB-0B6E-4554-AFE0-AC21ACE48435}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo_ioc", "demo-ioc\demo_ioc.csproj", "{16C14ECF-DF14-48DB-8200-A46D1ACF97BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rsvp_bootstrap_demo", "rsvp-bootstrap-demo\rsvp_bootstrap_demo.csproj", "{388A4152-D2AF-401F-8D68-1D9CA3A061BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C7B4CFBB-0B6E-4554-AFE0-AC21ACE48435}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7B4CFBB-0B6E-4554-AFE0-AC21ACE48435}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7B4CFBB-0B6E-4554-AFE0-AC21ACE48435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16C14ECF-DF14-48DB-8200-A46D1ACF97BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C14ECF-DF14-48DB-8200-A46D1ACF97BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C14ECF-DF14-48DB-8200-A46D1ACF97BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16C14ECF-DF14-48DB-8200-A46D1ACF97BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{388A4152-D2AF-401F-8D68-1D9CA3A061BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388A4152-D2AF-401F-8D68-1D9CA3A061BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388A4152-D2AF-401F-8D68-1D9CA3A061BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388A4152-D2AF-401F-8D68-1D9CA3A061BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
