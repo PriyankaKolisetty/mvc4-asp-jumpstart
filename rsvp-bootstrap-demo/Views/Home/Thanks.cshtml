@@ -11,7 +11,14 @@
 </head>
 <body>
     <div>
-        <p>Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.</p>
+        @{
+            if (ViewBag.IsComing ==true) {
+                <p>Yo! thats more like it, the drinks are already in the fridge</p>
+            }
+            else {
+                <p>Shame!.. We tell you , you are missing out on the fun, but nevertheless we are moving ahead</p>
+            }
+}
     </div>
 </body>
 </html>

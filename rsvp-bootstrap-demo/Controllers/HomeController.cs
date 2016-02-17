@@ -22,6 +22,7 @@ namespace rsvp_bootstrap_demo.Controllers
         }
         [HttpPost]
         public ActionResult Register(GuestResponse gr) {
+            ViewBag.IsComing = gr.IsAvailable;
             return View("Thanks");
         }
     }
